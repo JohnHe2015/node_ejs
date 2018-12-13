@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Welcome to mY home</title>
+	<link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <script>
+        window.onload = function(){
+            let oLogin = document.getElementById('login');
+            let oForm = document.getElementById('form1');
+            let oMessage = document.getElementById('message');
+            oLogin.addEventListener('click',function(){
+                oForm.submit();
+            },false);
+            document.onkeyup = function(e){
+                let event = e || window.event;
+                let key = event.which || event.keyCode || event.charCode;
+                if(key == 13)
+                {
+                    oForm.submit();
+                }
+            };
+        };
+    </script>
+</head>
+<body>
+	<div class="login-wrapper">
+		<div class="main">
+			<div class="login-logo">
+				<span>QChat</span>
+            </div>
+            <form id="form1" action="/login" method="post">
+                <div class="login-form">
+                    <span class="normal">
+                        <a href="javascript:void">
+                            注册
+                        </a>
+                    </span><span class="active">
+                        <a href="javascript:void">
+                            登录
+                        </a>
+                    </span>
+                    <span class="message" id="message"><%= errmsg%></span>
+                    <i class="icon-phone"></i>
+                    <input name="username" type="text" class="usrname">
+                    <i class="icon-key"></i>
+                    <input name="password" type="password" class="passwd">
+                    <a id="login" href="javascript:void" class="login">
+                        登录
+                    </a>
+                </div>
+            </form>
+		</div>
+	</div>
+</body>
+</html>

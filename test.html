@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        window.onload = function(){
+            var json = 
+        {
+  "form": "iElYmg",
+  "form_name": "MUSEE FOTO 自助价格查询",
+  "entry": {
+    "serial_number": 123,
+    "field_1": [
+      "图片1",
+      "图片2",
+      "图片3"
+    ],
+    "field_2": [
+      "选项1",
+      "选项2",
+      "选项3"
+    ],
+    "field_3": "这是一行文字",
+    "field_6": {
+      "province": "陕西省",
+      "city": "西安市",
+      "district": "雁塔区",
+      "street": "高新路"
+    },
+    "field_7": "400-6606-892",
+    "field_4": 3,
+    "creator_name": "小王",
+    "created_at": "2018-11-25T15:05:51.856Z",
+    "updated_at": "2018-11-25T15:05:51.856Z",
+    "info_remote_ip": "127.0.0.1"
+  }
+};
+var data = JSON.stringify(json);
+    fetch('http://47.98.138.190:8080/jinshuju',{
+      method:'POST',  
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body:data
+    })
+        };
+       
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

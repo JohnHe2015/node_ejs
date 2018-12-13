@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/ct.css">
+    <script>
+         window.onload=function(){
+             let icon_dropdown = document.getElementsByClassName('icon-dropdown')[0];
+             let oUserinfo = document.getElementById('userinfo');
+             oUserinfo.onmouseover=function(){
+                 icon_dropdown.className = 'icon-pullup';
+             };
+             oUserinfo.onmouseout = function(){
+                icon_dropdown.className = 'icon-dropdown';
+             };
+         };
+    </script>
+</head>
+<body>
+    <div class="header">
+        <div class="user">
+            <div id="userinfo" class="userinfo dropdown">
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="javascript:;">个人信息</a></li>
+                        <li><a href="javascript:;">账号设置</a></li>
+                        <li><a href="javascript:;">意见反馈</a></li>
+                        <li><a href="/logout">退出</a></li>
+                    </ul>
+                </div>
+                <a href="javascript:;" class="bubble">
+                    <i class=""></i>
+                </a>
+                <a href="javascipt:;">
+                    <img src="https://dn-coding-net-production-pp.codehub.cn/29402486-bf33-4cb4-9ea2-ab4bae89bee2.png" alt="ä˝ĺ˛">
+                    <i class="icon-dropdown"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content">
+contnt
+        </div>
+        <div class="sidebar">
+sidebar
+        </div>
+
+        <div class="right">
+right
+        </div>
+    </div>
+    <div class="footer">
+
+    </div>
+</body>
+</html>

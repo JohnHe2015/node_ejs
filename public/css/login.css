@@ -1,0 +1,130 @@
+/*layout css*/
+html,body{
+	height: 100%;
+	width: 100%;
+	background: #7F7FD5;
+	background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+	background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);
+}
+.login-wrapper{
+	/* background: url(../img/login.png) bottom center no-repeat #efeff4 ; */
+	background-size: 100% 100%;
+	width: 100%;
+	height: 100%
+	
+}
+.login-wrapper .main{
+	position: absolute;
+	width: 375px;
+	height: 348px;
+	background-color: rgba(0, 0, 0, 0.4);
+	left: 50%;
+	top: 50%;
+	margin-left: -186px;
+	margin-top: -174px;
+	border-radius: 6px;
+}
+.login-logo{
+	position: relative;
+	width: 375px;
+	height: 70px;	
+}
+.login-logo span{
+	position: absolute;
+	font-size: 36px;
+	color: #ffffff;
+	margin-left: 140px;
+	margin-top: 20px;
+}
+.login-form{
+	width: 375px;
+	height: 281px;
+}
+.login-form .normal{
+	display: inline-block;
+	width: 107px;
+	height: 33px;
+	border-bottom: 2px solid #a0a0a0;
+	text-align: center;
+	margin-left: 81px;
+}
+.login-form .active{
+	display: inline-block;
+	width: 107px;
+	height: 33px;
+	border-bottom: 3px solid #7ca065;
+	text-align: center;
+
+}
+.login-form .message{
+	font-size: 11px;
+	color: #f40;
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	/* visibility: hidden; */
+
+}
+.login-form .normal a{
+	font-size: 11px;
+	color: #717171;
+}
+.login-form .active a{
+	font-size: 11px;
+	color: #8aaa75;
+}
+.login-form .usrname{
+	width: 170px;
+	height: 23px;
+	border: 1px solid #d5d5d5;
+	margin-top: 5px;
+	margin-left: 91px;
+	padding-left: 20px;
+	border-radius: 3px;
+}
+.login-form .passwd{
+	width: 170px;
+	height: 23px;
+	border: 1px solid #d5d5d5;
+	margin-top: 10px;
+	margin-left: 91px;
+	padding-left: 20px;
+	border-radius: 3px;
+}
+.login-form .icon-phone{
+	position: absolute;
+	margin-top: 12px;
+	margin-left: 98px;
+	background: url(../img/phone.png) 0px 0px no-repeat;
+	width: 9px;
+	height: 13px;
+}
+.login-form .icon-key{
+	position: absolute;
+	margin-top: 47px;
+	margin-left: -190px;
+	background: url(../img/key.png) 0px 0px no-repeat;
+	width: 9px;
+	height: 13px;
+}
+
+.login-form .login{
+	display: block;
+	width: 192px;
+	height: 25px;
+	border-radius: 2px;
+	background-color: #7ca065;
+	margin-left: 91px;
+	margin-top: 15px;
+	text-align: center;
+	font-size: 11px;
+	color: #e3ebde;
+	line-height: 25px;
+}
+.login-form .login:hover{
+	color: #000000;
+	background-color: #333333;
+}
+
+

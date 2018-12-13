@@ -1,0 +1,121 @@
+/*clear css*/
+body,html,h1,h2,h3,h4,ol,ul,li,input,a,span,div{
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #333333;
+}
+a{
+	text-decoration: none;
+}
+ul,li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+input,textarea{
+	outline:none;
+}
+
+@font-face {
+	font-family: 'zsq';
+	src:  url('../fonts/zsq.eot?x5rlrd');
+	src:  url('../fonts/zsq.eot?x5rlrd#iefix') format('embedded-opentype'),
+	  url('../fonts/zsq.ttf?x5rlrd') format('truetype'),
+	  url('../fonts/zsq.woff?x5rlrd') format('woff'),
+	  url('../fonts/zsq.svg?x5rlrd#zsq') format('svg');
+	font-weight: normal;
+	font-style: normal;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'zsq' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+  
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-dropdown:before {
+	content: "\e900";
+  }
+  .icon-pullup:before {
+	content: "\e901";
+  }
+  .icon-home3:before {
+	content: "\e902";
+  }
+  .icon-image:before {
+	content: "\e90d";
+  }
+  .icon-connection:before {
+	content: "\e91b";
+  }
+  .icon-mic:before {
+	content: "\e91e";
+  }
+  .icon-folder:before {
+	content: "\e92f";
+  }
+  .icon-folder-open:before {
+	content: "\e930";
+  }
+  .icon-folder-plus:before {
+	content: "\e931";
+  }
+  .icon-folder-minus:before {
+	content: "\e932";
+  }
+  .icon-folder-download:before {
+	content: "\e933";
+  }
+  .icon-bubble:before {
+	content: "\e96b";
+  }
+  .icon-bubbles2:before {
+	content: "\e96d";
+  }
+  .icon-cog:before {
+	content: "\e994";
+  }
+  .icon-rss:before {
+	content: "\ea9b";
+  }
+  
+
+  /* dropdown container*/
+  .dropdown{
+	position: relative;
+	display: inline-block;
+  }
+  .dropdown-content{
+	position: absolute;
+	display: none;
+	background-color: #f9f9f9;
+	min-width: 100px;
+	margin-top: 50px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 12px 0px 12px 0px;
+	z-index: 2;
+	text-align: center;
+  }
+  .dropdown-content a{
+	  display: block;
+
+  }
+  .dropdown-content a:hover{
+	  color: #ffffff;
+	  background-color: #448af7;
+  }
+  .dropdown:hover .dropdown-content{
+	  border-radius: 3px;
+	  display: block;
+  }
